@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+    </link>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+
+    <!-- Initialize AOS  -->
+    <script>
+        AOS.init({
+            duration: 1000, // animation duration in ms
+            once: false      // animate only once
+        });
+    </script>
+
+
+    <!--navigation menu-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Hirushi Divyanjalie</span>
+            </div>
+            <div class="links">
+                <div class="link"> <a href="#">Home</a></div>
+                <div class="link"> <a href="#about">About Me</a></div>
+                <div class="link"> <a href="#skills">My Skills</a></div>
+                <div class="link"> <a href="#my-projects">My Projects</a></div>
+                <div class="link"> <a href="#contact">Contact</a></div>
+
+            </div>
+        </div>
+
+        <i class="fa-solid fa-bars hamburg" onclick="opendropdown()"></i>
+
+
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skills">My Skills</a>
+                <a href="#my-projects">My Projects</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+
+
+            <i class="fa-solid fa-xmark cancel" onclick="canceldropdown()"></i>
+
+        </div>
+
+
+        <!-- JS at the end of body -->
+        <script>
+            function opendropdown() {
+                document.querySelector('.dropdown').classList.add('show');
+            }
+
+            function canceldropdown() {
+                document.querySelector('.dropdown').classList.remove('show');
+            }
+        </script>
+
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="aa.png" alt="">
+            </div>
+            <div class="content">
+                <h1>
+                    <span class="hey"> <span style="color: white;">Hey I'm </span>
+                        Hirushi</span>
+
+                </h1>
+                <div class="typewritter">
+                    I'm a
+                    <span class="typewritter-text"></span>
+                    <label for=""></label>
+                </div>
+                <p>third-year Information Technology undergraduate at SLIIT, passionate about web development and
+                    eager to apply my skills in real-world projects. I am actively seeking a internship
+                    where I can contribute, learn, and grow while building impactful web applications.</p>
+                <div class="social-links">
+                    <a href="https://github.com/HirushiDivya">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hirushi-divyanjalie-b36869293">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:hirushidivyanjalie12@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/0761758959" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="btn">
+                    <button onclick="togglePanel()">Hire Me</button>
+
+                    <div id="hirePanel" class="hire-card">
+                        <div class="card">
+
+                            <h3 class="h3">Get in Touch</h3>
+                            <p>Email: <a href="mailto:hirushidivyanjalie12@gmail.com">hirushidivyanjalie12@gmail.com</a>
+                            </p>
+                            <p>LinkedIn: <a href="https://www.linkedin.com/in/hirushi-divyanjalie-b36869293"
+                                    target="_blank">View Profile</a></p>
+                            <p>Phone: <a href="tel:+761758959">+76 175 8959</a></p>
+                            <p style="text-align: center;"><a href="YourCV.pdf">Download CV</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <script>
+                    function togglePanel() {
+                        const panel = document.getElementById("hirePanel");
+                        panel.style.display = panel.style.display === "none" ? "block" : "none";
+                    }  
+                </script>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!--about section start-->
+
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title"><span>About Me</span></div>
+            <div class="about-details">
+                <div class="left">
+                    <img src="cc.jpg" alt="" />
+                </div>
+                <div class="right">
+                    <div class="topic">Building Skills, Creating Value</div>
+                    <p data-aos="fade-left">
+                        <span style="font-size: 17px;">Hey! I’m Hirushi Divyanjalie. </span>
+                        <br>
+                        I really like to coding and building web apps.
+                        I’m still learning and exploring new things,
+                        but I always give my best to finish projects and solve problems.
+                        I have experience with HTML, CSS, JavaScript, MongoDB,
+                        SQL, API integration, and GitHub, and I’m continuously growing my skills.
+                        </br>
+
+                        <br> While I may not know
+                        everything yet, I’m eager to gain real-world experience, improve as a developer, and contribute
+                        to meaningful projects with dedication.
+                        </br>
+
+                    </p>
+                    <!--<div class="button">
+                        <button>Download CV</button>
+                    </div>-->
+                    <div class="button">
+                        <a href="assets/Hirushi Divyanjali1.pdf" download>
+                            <button>Download CV</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!--My Skill session start-->
+    <section class="skills" id="skills">
+        <div class="content">
+            <div class="title"><span>My Skills</span></div>
+            <div class="skills-details">
+                <div class="text">
+                    <div class="topic"> <span>Skills Reflects Our Knowledge</span>
+                    </div>
+                    <p data-aos="fade-right"> I am a passionate undergraduate with experience building
+                        interactive and responsive web applications using React.js, Node.js, and Express.js through
+                        personal and university projects. I have practical knowledge of SQL (MySQL/Oracle), MongoDB,
+                        RESTful APIs, and version control with Git. I like to learn new technologies and have recently
+                        started exploring Next.js and Tailwind CSS to create efficient and scalable
+                        applications. I am eager to apply my programming, problem-solving, and teamwork skills in a
+                        professional environment as a web development or full-stack development intern.</p>
+                    <!--<div class="experience">
+                        <div class="num">10</div>
+                        <div class="exp">
+                            Years Of <br>
+                            Experience</div>
+                    </div> -->
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="topic" style="font-size: 20px;"> Programming Languages</div>
+                        <div class="per" style="color: white; font-size: 15px;"> JavaScript </div>
+                        <div class="per" style="color: white; font-size: 15px;"> Java </div>
+                        <div class="per" style="color: white; font-size: 15px;"> C / C++ </div>
+                        <div class="per" style="color: white; font-size: 15px;"> Python </div>
+                    </div>
+                    <div class="box">
+                        <div class="topic"> Web Development</div>
+                        <div class="per" style="color: white; font-size: 15px;"> HTML </div>
+                        <div class="per" style="color: white; font-size: 15px;"> CSS </div>
+                        <div class="per" style="color: white; font-size: 15px;"> React.js </div>
+                        <div class="per" style="color: white; font-size: 15px;"> Node.js & Express.js </div>
+                        <div class="per" style="color: white; font-size: 15px;"> Spring Boot </div>
+
+                    </div>
+                    <div class="box">
+                        <div class="topic"> DataBases</div>
+                        <div class="per" style="color: white; font-size: 15px;"> SQL(MySQL/Oracle) </div>
+                        <div class="per" style="color: white; font-size: 15px;"> NoSQL(MongoDB) </div>
+
+                    </div>
+                    <div class="box">
+                        <div class="topic"> Toolas & Version Control</div>
+                        <div class="per" style="color: white; font-size: 15px;"> Git & GitHub </div>
+                        <div class="per" style="color: white; font-size: 15px;"> VS Code / IntelliJ / Eclipse </div>
+                        <div class="per" style="color: white; font-size: 15px;"> Postman (for API testing) </div>
+
+                    </div>
+                    <div class="box">
+                        <div class="topic"> Other Technical Skills</div>
+                        <div class="per" style="color: white; font-size: 15px;"> Problem Solving / Algorithms </div>
+                        <div class="per" style="color: white; font-size: 15px;"> Data Structures </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="topic"> Soft Skills</div>
+                        <div class="per" style="color: white; font-size: 15px;"> Communication </div>
+                        <div class="per" style="color: white; font-size: 15px;"> Teamwork </div>
+                        <div class="per" style="color: white; font-size: 15px;"> Time Management </div>
+                        <div class="per" style="color: white; font-size: 15px;"> Adaptability / Quick Learner </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--my-projects Section Start-->
+
+    <section class="services" id="my-projects">
+        <div class="content">
+            <div class="title"><span>My Projects</span></div>
+            <div class="boxes">
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-address-card"></i>
+                    </div>
+                    <div class="topic">My Portfolio</div>
+                    <p> Explore my GitHub portfolio, created using VS Code, HTML, CSS, and small JavaScript functions,
+                        showcasing my projects, experiments, and learning journey through practical web applications.
+                        And alo My portfolio is hosted on GitHub Pages.
+                    </p>
+                    <div class="button">
+                        <a href="https://github.com/HirushiDivya/MyPortfolio">
+                            <button>view</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="topic">LearnX (MERN Stack)</div>
+                    <p>An online learning platform built with MongoDB, Express, React, and Node.js, enabling students to
+                        access courses, manage content, and track progress with an interactive, scalable interface.
+                        Full details about this project, including features, setup instructions, and technologies used,
+                        are explained in the README file, and the project is available on GitHub.</p>
+                    <div class="button">
+                        <a href="https://github.com/HirushiDivya/Learnx">
+                            <button>view</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="topic">To Do List</div>
+                    <p>Modern To-Do List is a simple and responsive web app to manage daily tasks. Users can add, edit,
+                        and delete tasks, with data saved locally so it persists after refreshing. It features a clean
+                        interface, and works seamlessly on both desktop and mobile devices. Perfect for quick and easy
+                        task management without any backend setup. The project is hosted on GitHub Pages . <br>
+                        Try it live here: <a href="https://hirushidivya.github.io/ToDoList/">
+                            <p >view live</p>
+                        </a>
+
+                    <div class="button">
+                        <a href="https://github.com/HirushiDivya/ToDoList">
+                            <button>view</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-wheelchair"></i>
+                    </div>
+                    <div class="topic">Elder Care</div>
+                    <p>A mobility support system designed to assist and track elder users’ movements, providing
+                        real-time monitoring, safety alerts, and guidance to improve daily mobility and independence.
+                    </p>
+                    <div class="button">
+                        <a href="https://github.com/HirushiDivya/IT_Project_mobility_support">
+                            <button>view</button>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="topic">LearnX (SpringBoot)</div>
+                    <p>A RESTful API built with Spring Boot for managing resources efficiently, featuring endpoints for
+                        CRUD operations and secure backend integration for web applications.</p>
+                    <div class="button">
+                        <a href="https://github.com/HirushiDivya/LearnX-Springboot">
+                            <button>view</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!--Contact me section-->
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title">
+                <span>Get In Touch</span>
+            </div>
+
+            <div class="text">
+                <p style="color: white;">
+                    Currently seeking internship opportunities to learn and contribute. Feel free to reach out<br>
+                    I’d love to hear from you!
+                </p>
+                <br>
+                <a href="mailto:your.email@example.com" class="btn" style="color: white; font-size: 25px;">Open to
+                    Internships</a>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--Footer section start-->
+
+    <footer>
+        <div class="text">
+            <span>Created By
+                <a href="#"> Hirushi Divyanjalie</a>
+                &#169,2025 All Rights Reserverd
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--             <div class="topic">  see the engine? Check GitHub</div>
+                <p>vvvvvvvvvvvvvvvvvvvvvvvvvvvv</p>
+                <div class="button">
+                    <a href="https://github.com/HirushiDivya/portfoliotutorial" target="_blank">
+                        <button> My Portfolio </button>
+                    </a>
+                </div>
+
+            -->
+
+</body>
+
+</html>
+
+
+<style>
+    .image img {
+        width: 100%;
+        /* Makes image fill the container width */
+        height: auto;
+        /* Maintains aspect ratio */
+        display: block;
+        /* Removes unwanted inline spacing */
+    }
+</style>
+
+
+
+<style>
+    .left img {
+        width: 100%;
+        /* Makes image fill the container width */
+        height: auto;
+        /* Maintains aspect ratio */
+        display: block;
+        /* Removes unwanted inline spacing */
+    }
+</style>
